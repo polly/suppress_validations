@@ -1,0 +1,874 @@
+# Logfile created on Mon Jul 20 18:31:23 +0200 2009 by /
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE "suppress_validations_model" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "test" varchar(255), "desc" text) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mDROP TABLE "suppress_validations_model"[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE "suppress_validations_model" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "test" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: suppress_validations_models: SELECT * FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "test" varchar(255), "desc" text) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Load (0.2ms)[0m   [0mSELECT * FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "test" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.2ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "test" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.2ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "test" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.2ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "test" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.2ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.4ms)[0m   [0mINSERT INTO "suppress_validations_models" ("desc", "test") VALUES(NULL, NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "test" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.4ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "test" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.2ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "test" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (4.9ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "test" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.2ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.9ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.4ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.2ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.9ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.2ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.4ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.4ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.2ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.8ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.8ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Create (0.2ms)[0m   [0;1mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (2.2ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (2.6ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.9ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.6ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (2.2ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.4ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (2.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.6ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.6ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0;1mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (2.1ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.4ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Create (0.2ms)[0m   [0;1mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (1.6ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.8ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.5ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (2.1ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (1.1ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.8ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.8ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Create (0.2ms)[0m   [0;1mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (1.9ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.6ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.6ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Create (0.2ms)[0m   [0;1mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (2.4ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.8ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.8ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (4.1ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Create (0.2ms)[0m   [0;1mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (1.9ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (1.0ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.8ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Create (0.2ms)[0m   [0;1mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (1.9ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.8ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.8ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.8ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.6ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Create (0.2ms)[0m   [0;1mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (1.7ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.8ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (4.3ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.8ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.8ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.8ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.8ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (17.9ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (86.1ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (14.0ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (3.3ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (59.1ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (15.9ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.2ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (29.8ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0;1mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (65.6ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.4ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES(NULL, NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (158.5ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.8ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (1.0ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Create (0.2ms)[0m   [0;1mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (1.7ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES(NULL, NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (1.9ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (1.0ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Create (0.2ms)[0m   [0;1mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (1.7ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES(NULL, NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (1.9ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (1.0ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mDROP TABLE "suppress_validations_models"[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE TABLE "suppress_validations_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.9ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Load (0.1ms)[0m   [0;1mSELECT * FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (0.7ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Create (0.2ms)[0m   [0;1mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES('Test', 'Desc')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;36;1mSuppressValidationsTest::SuppressValidationsModel Delete all (1.9ms)[0m   [0;1mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Create (0.3ms)[0m   [0mINSERT INTO "suppress_validations_models" ("title", "desc") VALUES(NULL, NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "suppress_validations_models" [0m
+  [4;35;1mSuppressValidationsTest::SuppressValidationsModel Delete all (2.5ms)[0m   [0mDELETE FROM "suppress_validations_models" WHERE 1=1[0m
