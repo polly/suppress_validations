@@ -33,8 +33,10 @@ module SuppressValidations
   module InstanceMethods
     def suppress_validations
       ActiveRecord::Base.disable_validations!
-      yield
+      ret = yield
       ActiveRecord::Base.enable_validations!
+
+      return ret
     end
   end
 end
