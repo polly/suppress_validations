@@ -1,13 +1,28 @@
 SuppressValidations
 ===================
 
-Introduction goes here.
-
+Allows you to temporarily disable validations for any ActiveRecord object,
+mainly intended for use in script/console, though it might possibly be somewhat
+usefull in unit tests as well.
 
 Example
 =======
 
-Example goes here.
+class SomeModel < ActiveRecord::Base
+  validates_presence_of :some_attribute
+end
 
 
-Copyright (c) 2009 [name of plugin creator], released under the MIT license
+
+include SuppressValidations
+
+some_model = SomeModel.new
+some_model.save # -> false
+
+
+suppress_validations do
+    some_model.save # -> true
+end
+
+
+Copyright (c) 2009 Patrik Hedman, released under the MIT license
